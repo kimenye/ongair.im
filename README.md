@@ -16,3 +16,15 @@ update-rc.d nginx defaults
 
 
 sudo mkdir -p /var/www/{domain_name}/public_html
+
+sudo apt-get install git-core
+git config --global alias.s status
+
+git clone https://github.com/kimenye/ongair.im.git public_html
+
+sudo chown -R www-data:www-data /var/www/ongair.im/public_html
+
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ongair.im
+
+
+sudo ln -s /etc/nginx/sites-available/ongair.im /etc/nginx/sites-enabled/ongair.im
