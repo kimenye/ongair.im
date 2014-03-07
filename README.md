@@ -1,29 +1,18 @@
-# Foundation Compass Template
+# 
 
-The easiest way to get started with Foundation + Compass.
+Ongair Website
 
-## Requirements
+## Setting up server
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
 
-## Quickstart
+cat ~/.ssh/id_rsa.pub | ssh root@ssh.ongair.im "cat >> ~/.ssh/authorized_keys"
+sudo apt-get update
+sudo apt-get install nginx
+sudo service nginx start
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+ifconfig eth0 | grep inet | awk '{ print $2 }'
 
-```bash
-compass watch
-```
+update-rc.d nginx defaults
 
-## Upgrading
 
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+sudo mkdir -p /var/www/{domain_name}/public_html
