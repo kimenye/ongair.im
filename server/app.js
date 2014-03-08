@@ -4,8 +4,8 @@ var request = require('request');
 
 
 var pubnub = require("pubnub").init({
-    publish_key   : "pub-c-d2bcacda-ad1e-4c33-aa0f-77e592c387da",
-    subscribe_key : "sub-c-ebfa3f62-71f4-11e2-93fe-12313f022c90"
+    publish_key   : process.env.PUBLISH_KEY, //"pub-c-d2bcacda-ad1e-4c33-aa0f-77e592c387da",
+    subscribe_key : process.env.SUBSCRIBE_KEY //"sub-c-ebfa3f62-71f4-11e2-93fe-12313f022c90"
 });
 
 
@@ -48,8 +48,11 @@ app.post('/api', function(req, res) {
 
 app.post('/send', function(req, res) {
 	// console.log("Request : ", req.body);
+	var url = process.env.API_URL + "/send"
 
-	request.post('http://localhost:8081/send', {form:{phone_number: req.param('phone_number'), text: req.param('message') },  json: true}, 
+	console.log("Sending request to ", url);
+
+	request.post(url, {form:{phone_number: req.param('phone_number'), text: req.param('message') },  json: true}, 
 		function (error, response, body) {
 			// console.log("Response ", response);
 			// console.log("Body ", body);
