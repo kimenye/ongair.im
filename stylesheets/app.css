@@ -9420,44 +9420,52 @@ th.hide-for-touch {
   font-size: 1rem;
 }
 
-/* line 57, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
+div#home .tableCell {
+  vertical-align: top;
+}
+
+/* line 65, ../scss/app.scss */
 body, h1, h2, h3, h4, h5, h6, button, .button {
   font-family: "PT Sans", sans-serif;
 }
 
-/* line 61, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 .hero {
   background: url("../images/stripe.jpg") top left repeat-x;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 3px solid #ededed;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 }
-/* line 67, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .hero img {
   display: block;
   margin: auto;
 }
-/* line 72, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .hero img.inline {
   display: inline-block;
 }
-/* line 76, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .hero .tagline {
   text-align: center;
   margin-top: 2rem;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 .main-links {
+  border-top: 3px solid #ededed;
   border-bottom: 3px solid #ededed;
   padding: .3rem;
+  width: 100%;
 }
-/* line 86, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .main-links button, .main-links .button {
   margin: 0px;
   text-transform: uppercase;
+  display: block;
+  margin: auto;
 }
-/* line 91, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .main-links .inline-list {
   padding: 0.95rem;
   margin-left: -1.375rem;
@@ -9466,55 +9474,173 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
   margin-bottom: 0px;
 }
 
-/* line 100, ../scss/app.scss */
+/* line 114, ../scss/app.scss */
 .promo {
   background: #f4f4f4;
 }
 
-/* line 104, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .customers {
-  background: #f5f5f5;
   padding: 2rem;
 }
 
-/* line 109, ../scss/app.scss */
+/* line 123, ../scss/app.scss */
+.demo {
+  padding: 2rem;
+  background: #f5f5f5;
+}
+/* line 127, ../scss/app.scss */
+.demo .centered {
+  text-align: center;
+}
+/* line 131, ../scss/app.scss */
+.demo .instructions {
+  padding-top: 3rem;
+}
+/* line 135, ../scss/app.scss */
+.demo .instructions h1 {
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  width: 60px;
+  margin: auto;
+}
+/* line 143, ../scss/app.scss */
+.demo .instructions h1.success {
+  color: #ffffff;
+  background: #43ac6a;
+}
+/* line 148, ../scss/app.scss */
+.demo .instructions p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1.3rem;
+}
+/* line 153, ../scss/app.scss */
+.demo .instructions p span.highlight {
+  color: #0e8dd9;
+}
+/* line 160, ../scss/app.scss */
+.demo .orbit-container .orbit-next, .demo .orbit-container .orbit-prev, .demo .orbit-container .orbit-slide-number, .demo .orbit-container .orbit-timer {
+  display: none;
+}
+/* line 165, ../scss/app.scss */
+.demo .navigation {
+  padding-top: 3rem;
+}
+/* line 167, ../scss/app.scss */
+.demo .navigation a {
+  margin: auto;
+  display: block;
+}
+/* line 176, ../scss/app.scss */
+.demo .tabs-content .content {
+  padding: 2rem;
+}
+/* line 179, ../scss/app.scss */
+.demo .tabs-content .content h4 {
+  margin-bottom: 2rem;
+}
+/* line 183, ../scss/app.scss */
+.demo .tabs-content .content .panel {
+  background: #ffffff;
+}
+/* line 186, ../scss/app.scss */
+.demo .tabs-content .content .panel .button {
+  width: 64px;
+  margin: auto;
+  display: block;
+}
+/* line 192, ../scss/app.scss */
+.demo .tabs-content .content .panel img {
+  margin: auto;
+}
+/* line 196, ../scss/app.scss */
+.demo .tabs-content .content .panel h5 {
+  margin-top: 1rem;
+  border: 1px solid #f5f5f5;
+  border-left: none;
+  border-right: none;
+}
+/* line 205, ../scss/app.scss */
+.demo .tabs-content .content.active {
+  background: #ffffff;
+}
+/* line 209, ../scss/app.scss */
+.demo .tabs-content #textpanel, .demo .tabs-content #multimediapanel {
+  padding: 7rem;
+}
+
+/* line 216, ../scss/app.scss */
+.hidden {
+  display: none;
+}
+
+/* line 220, ../scss/app.scss */
+.compose {
+  background: #e7e7e7;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+/* line 226, ../scss/app.scss */
+.compose .send {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+/* line 231, ../scss/app.scss */
+.compose small.sent {
+  font-size: 80%;
+  font-style: italic;
+}
+/* line 236, ../scss/app.scss */
+.compose textarea {
+  border: none;
+  margin-bottom: 0px;
+}
+
+/* line 242, ../scss/app.scss */
 .footer {
   background: #333333;
   padding: 1rem;
   width: 100%;
 }
-/* line 116, ../scss/app.scss */
-.footer small {
+/* line 249, ../scss/app.scss */
+.footer h5.mantra {
+  display: inline-block;
+}
+/* line 251, ../scss/app.scss */
+.footer h5.mantra small {
   font-size: 80%;
 }
-/* line 120, ../scss/app.scss */
+/* line 257, ../scss/app.scss */
 .footer .social {
   float: right;
   margin-bottom: 0px;
 }
-/* line 124, ../scss/app.scss */
+/* line 261, ../scss/app.scss */
 .footer .social li {
   list-style: none;
   display: block;
   float: left;
   margin-right: 10px;
 }
-/* line 130, ../scss/app.scss */
+/* line 267, ../scss/app.scss */
 .footer .social li a {
   display: block;
   height: 50px;
   width: 50px;
   background: url(../images/social.png) no-repeat center 0;
 }
-/* line 137, ../scss/app.scss */
+/* line 274, ../scss/app.scss */
 .footer .social li a:hover {
   opacity: 0.8;
 }
-/* line 141, ../scss/app.scss */
+/* line 278, ../scss/app.scss */
 .footer .social li a.twitter {
   background-position: center 0;
 }
-/* line 145, ../scss/app.scss */
+/* line 282, ../scss/app.scss */
 .footer .social li a.mail {
   background-position: center -400px;
 }

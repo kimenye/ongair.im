@@ -5,60 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ongair | Connect your business, customer care and website with Whatsapp</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <!-- <link rel="stylesheet" href="stylesheets/fullPage.css" /> -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans" />
     <script src="js/modernizr.js"></script>
   </head>
   <body>
-    <div class="nav-bg">
-      <div class="row">
-        <div class="large-12 columns">
-          <nav class="top-bar" data-topbar>
-            <ul class="title-area">
-              <li class="name">
-                <h1>
-                  <!-- <a href="/"><img src="images/logo_small.png" /></a> -->
-                </h1>
-              </li>
-            </ul>
-
-            <section class="top-bar-section">
-              <!-- Right Nav Section -->
-              <ul class="right">
-                <li class=""><a href="">About</a></li>
-                <li class=""><a href="">Features</a></li>
-                <li class=""><a href="">Pricing</a></li>
+    <div id="home" class="section">
+      <!-- <div class="nav-bg">
+        <div class="row">
+          <div class="large-12 columns">
+            <nav class="top-bar" data-topbar>
+              <ul class="title-area">
+                <li class="name">
+                  <h1>
+                    
+                  </h1>
+                </li>
               </ul>
-            </section>
-          </nav>
+
+              <section class="top-bar-section">
+                
+                <ul class="right">
+                  <li class=""><a href="">About</a></li>
+                  <li class=""><a href="">Features</a></li>
+                  <li class=""><a href="">Pricing</a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+      </div> -->
+      <div class="hero">
+        <div class="row">
+          <div class="large-12 columns">
+            <img src="images/hero.jpg">
+
+            <div class="row">
+              <div class="large-6 large-centered columns">
+                <h3 class="subheader tagline">Connect your business, customer care and website with Whatsapp <img class="inline" src="images/whatsapp.jpg" ></h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero">
-      <div class="row">
-        <div class="large-12 columns">
-          <img src="images/hero.jpg">
 
-          <div class="row">
-            <div class="large-6 large-centered columns">
-              <h3 class="subheader tagline">Connect your business, customer care and website with Whatsapp <img class="inline" src="images/whatsapp.jpg" ></h3>
-            </div>
+      <div class="main-links">
+        <div class="row">
+<!--           <div class="large-6 columns">
+            <ul class="inline-list">
+              <li><a href="">GETTING STARTED</a></li>
+              <li><a href="">API</a></li>
+              <li><a href="">DASHBOARD</a></li>            
+            </ul>
+          </div> -->
+          <div class="large-6 large-centered columns">
+            <div class="row">
+              <div class="large-6 columns">
+                <a href="mailto:robot@sprout.co.ke" class="button secondary">Request Info</a>
+              </div>
+              <div class="large-6 columns">
+                <a class="button" href="#demo">Live Demo</a>
+              </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="main-links">
+    <div id="demo" class="section demo">
       <div class="row">
-        <div class="large-6 columns">
-          <ul class="inline-list">
-            <li><a href="">LINK HERE</a></li>
-            <li><a href="">LINK HERE</a></li>
-            <li><a href="">LINK HERE</a></li>
+        <div class="large-12 columns">
+          <h3 class="subheader">Demo <small>See ongair in action</small></h3>
+        </div>
+      </div>
+      <ul class="steps" data-orbit>
+        <li class="step-one" data-orbit-slide="step-1">
+
+          <div class="row">
+            <div class="large-6 columns">
+              <div class="row">
+                <div class="large-12 large-centered columns">
+                  <img src="images/phone_bg.png" />
+
+                  <p class="centered">You'll need your phone to do this live demo</p>
+                </div>
+              </div>
+            </div>
+            <div class="large-6 columns">
+              <div class="row">
+                <div class="large-12 large-centered columns">
+                  
+                  <div class="instructions">
+                    <h1>1</h1>
+                    <p>Add our number <span class="highlight">+254 733 171 036</span><br /> to your contacts.</p>
+                    <h1>2</h1>
+                    <p>Send us a text message with the code <span id="code" class="highlight"></span></p>
+                  </div>
+
+                  <div class="navigation">
+                    <a class="button disabled secondary" data-orbit-link="step-2">Waiting for you to send the code...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step-two" data-orbit-slide="step-2">
+          <div class="row">
+            <div class="large-12 columns">
+              
+              <dl class="tabs" data-tab>
+                <dd class="active"><a href="#textpanel">Text Messages</a></dd>
+                <dd><a href="#multimediapanel">Multimedia</a></dd>
+
+              </dl>
+              <div class="tabs-content">
+                <div class="content active" id="textpanel">
+                  <h4 class="subheader centered">You can send yourself a message from this page. Try it out...</h4>
+
+                  <div class="row">
+                    <div class="large-6 large-centered columns">
+                      <div class="compose">
+                        <form method="POST" action="demo/send" id="sendForm">
+                          <textarea name="message" placeholder="My awesome message..."></textarea>
+                          <input type="submit" class="button tiny radius send success" value="Send" />  
+                          <small class="sent hidden">Sent!</small>
+                          <input type="hidden" name="phone_number" />                        
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content" id="multimediapanel">
+                  <h4 class="subheader centered">WhatsApp is great for sending multimedia. Demo coming soon...</h4>
+
+                  <!-- <div class="row">
+                    <div class="medium-3 columns panel">
+                      <img src="images/keep_calm.jpg" />
+
+                      <h5 class="subheader centered">Images</h5>
+
+                      <a id="sendImage" class="button tiny success">Send</a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div id="pricing" class="section">
+      <div class="pricing">
+        <div class="row">
+          <div class="large-12 columns">
+            <h3 class="subheader">Pricing</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="medium-4 columns panel">
+          </div>
+          <div class="medium-4 columns panel">
+          </div>
+          <div class="medium-4 columns panel">
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="customer" class="section">
+      <div class="customers">
+        <div class="row">
+          <div class="large-12 columns">
+            <h3 class="subheader">Who is using Ongair? <small>Some of our launch clients include...</small></h3>
+          </div>        
+        </div>
+        <div class="row">
+          <ul class="large-block-grid-4 columns">
+            <li>
+              <img src="images/heineken_small.png" />
+            </li>
+
+            <li>
+              <img src="images/Chase-Bank-logo.jpg" />
+            </li>
           </ul>
         </div>
-        <div class="large-6 columns">
-          <a class="button secondary">Request Info</a>
-          <a class="button">Schedule Demo</a>
+      </div>
+
+      <div class="footer">
+        <div class="row">
+
+          <div class="medium-8 columns">
+
+            <a href="http://sprout.co.ke">
+              <img src="images/sprout.png" />      
+            </a>
+            <h5 class="mantra subheader">
+              <small>Make Useful Stuff from the Internet</small>
+            </h5>
+          </div>
+          <div class="medium-4 columns">
+            <ul class="social">
+              <li>
+                <a href="http://www.twitter.com/sproutke" class="twitter"></a>
+              </li>
+              <li>
+                <a href="mailto:robot@sprout.co.ke" class="mail"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -68,46 +228,14 @@
       </div>
     </div>
 
-    <div class="customers">
-      <div class="row">
-        <div class="large-12 columns">
-          <h3 class="subheader">Who is using Ongair? <small>Some of our launch clients include...</small></h3>
-        </div>        
-      </div>
-      <div class="row">
-        <ul class="large-block-grid-4 columns">
-          <li>
-            <img src="images/heineken_small.png" />
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="row">
-
-        <div class="medium-8 columns">
-
-          <a href="http://sprout.co.ke">
-            <img src="images/sprout.png" />      
-          </a>
-          <small>Make Useful Stuff from the Internet</small>
-        </div>
-        <div class="medium-4 columns">
-          <ul class="social">
-            <li>
-              <a href="http://www.twitter.com/sproutke" class="twitter"></a>
-            </li>
-            <li>
-              <a href="contact" class="mail"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+  
     <script src="js/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/monster.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <!-- // <script src="js/jquery.slimscroll.min.js"></script> -->
+    <!-- // <script src="js/fullPage.min.js"></script> -->
+     <script src=http://cdn.pubnub.com/pubnub.min.js ></script>
     <script src="js/app.js"></script>
   </body>
 </html>
