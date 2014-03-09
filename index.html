@@ -102,7 +102,7 @@
                   </div>
 
                   <div class="navigation">
-                    <a class="button disabled secondary" data-orbit-link="step-2">Waiting for you to send the code...</a>
+                    <a class="button disabled secondary">Waiting for you to send the code...</a>
                   </div>
                 </div>
               </div>
@@ -111,15 +111,34 @@
         </li>
 
         <li class="step-two" data-orbit-slide="step-2">
-          <div class="row">
+          <div class="row step">
             <div class="large-12 columns">
-              
-              <dl class="tabs" data-tab>
+              <h4 class="subheader centered">You can send yourself a message from this page. Try it out...</h4>
+
+              <div class="row">
+                <div class="large-6 large-centered columns">
+                  <div class="compose">
+                    <form method="POST" action="demo/send" id="sendForm">
+                      <textarea name="message" placeholder="My awesome message..."></textarea>
+                      <input type="submit" class="button tiny radius send success" value="Send" />  
+                      <small class="sent hidden">Sent!</small>
+                      <input type="hidden" name="phone_number" />                        
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+<!--               <div class="row btn">
+                <div class="large-3 large-centered columns">
+                  <a class="button small success">Cool. What else?</a>
+                </div>
+              </div> -->
+              <!-- <dl class="tabs" data-tab>
                 <dd class="active"><a href="#textpanel">Text Messages</a></dd>
                 <dd><a href="#multimediapanel">Multimedia</a></dd>
 
               </dl>
-              <div class="tabs-content">
+              <div class="tabs-content horizontal">
                 <div class="content active" id="textpanel">
                   <h4 class="subheader centered">You can send yourself a message from this page. Try it out...</h4>
 
@@ -138,19 +157,31 @@
                 </div>
 
                 <div class="content" id="multimediapanel">
-                  <h4 class="subheader centered">WhatsApp is great for sending multimedia. Demo coming soon...</h4>
+                  <h4 class="subheader centered">WhatsApp is great for sending multimedia.</h4>
+                  <dl class="mmmstabs tabs vertical" data-tab>
+                    <dd class="active"><a href="#imagespanel">Images</a></dd>
+                    <dd><a href="#videopanel">Video</a></dd>
+                    <dd><a href="#vcardpanel">V Card</a></dd>
+                    <dd><a href="#locationpanel">Location</a></dd>
+                  </dl>
 
-                  <!-- <div class="row">
-                    <div class="medium-3 columns panel">
-                      <img src="images/keep_calm.jpg" />
-
-                      <h5 class="subheader centered">Images</h5>
-
-                      <a id="sendImage" class="button tiny success">Send</a>
+                  <div class="tabs-content vertical">
+                    <div class="content active" id="imagespanel">
+                      <h5 class="subheader">An picture is worth a thousand words</h5>
                     </div>
-                  </div> -->
+                    <div class="content active" id="videopanel">
+                      <h5 class="subheader">An picture is worth a thousand words</h5>
+                    </div>                    
+                    <div class="content active" id="vcardpanel">
+                      <h5 class="subheader">An picture is worth a thousand words</h5>
+                    </div>                    
+                    <div class="content active" id="locationpanel">
+                      <h5 class="subheader">An picture is worth a thousand words</h5>
+                    </div>
+                  </div>
+                  
                 </div>
-              </div>
+              </div> -->
               
             </div>
           </div>

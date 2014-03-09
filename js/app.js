@@ -8,7 +8,7 @@ $(document).ready(function() {
             timer: false,
             next_on_click: false,
             animation_speed: 1000,
-            navigation_arrows: false,
+            navigation_arrows: true,
             bullets: false,
             swipe: false
        }
@@ -28,6 +28,7 @@ $(document).ready(function() {
                 monster.set('token_verified', true);
                 monster.set('phone_number', message.data.from);
                 $('.instructions h1').addClass('success');
+                $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Lets go!');
                 monster.set('step', 2);
             }
         }
@@ -36,11 +37,12 @@ $(document).ready(function() {
     function init() {
         var verified = monster.get('token_verified') != null;
         var step = monster.get('step');
-
+        // debugger;
         if (step == 2) {
             $('.instructions h1, .navigation a').addClass('success');
             $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Lets go!');
-            $('step-one .navigation a').click();
+            // $('step-one .navigation a').click();
+            // $('.orbit-next').click();
             $('input[name="phone_number"]').val(monster.get('phone_number'));
         }
     }
@@ -72,6 +74,12 @@ $(document).ready(function() {
         if (!$('small.sent').hasClass('hidden'))
             $('small.sent').addClass('hidden');    
     });
+
+    $('.navigation a').click(function() {
+        if (monster.get('step') == 2) {
+            $('.orbit-next').click();
+        }
+    })
 
     init();
 
