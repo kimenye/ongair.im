@@ -4,7 +4,7 @@ Ongair Website
 
 ## Setting up server
 
-
+```
 cat ~/.ssh/id_rsa.pub | ssh root@ssh.ongair.im "cat >> ~/.ssh/authorized_keys"
 sudo apt-get update
 sudo apt-get install nginx
@@ -28,3 +28,19 @@ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/ongair.im
 
 
 sudo ln -s /etc/nginx/sites-available/ongair.im /etc/nginx/sites-enabled/ongair.im
+```
+
+## Installing Node JS
+
+sudo apt-get install python-software-properties
+sudo apt-add-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+
+## Create an upstart service to manage this node instance
+
+copy the node.conf file into /etc/init/node.conf
+
+service node start
+
+## Link the node server via proxy 
