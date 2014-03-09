@@ -38,12 +38,14 @@ app.get('/code', function(req, res){
 app.post('/api', function(req, res) {
 
 	console.log("Request : ", req.body);
-	res.json({ success: true });
+	
 
 	pubnub.publish({
 		channel : "ongair_im",
         message : { "data" : req.body }
-	})
+	});
+
+	res.json({ success: true });
 });
 
 app.post('/send', function(req, res) {
