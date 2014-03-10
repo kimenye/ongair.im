@@ -27,7 +27,7 @@ $(document).ready(function() {
             if (message.data.message == token) {
                 monster.set('token_verified', true);
                 monster.set('phone_number', message.data.from);
-                $('.instructions h1').addClass('success');
+                $('.instructions h1, .navigation a').addClass('success');
                 $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Lets go!');
                 monster.set('step', 2);
             }
