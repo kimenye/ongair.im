@@ -23,10 +23,14 @@ $(document).ready(function() {
         var verified = monster.get('token_verified') != null;
 
         if (!verified) {
+            // debugger;
             var token = monster.get('token');
             if (message.data.message == token) {
                 monster.set('token_verified', true);
                 monster.set('phone_number', message.data.from);
+                
+                $('input[name="phone_number"]').val(message.data.from);
+
                 $('.instructions h1, .navigation a').addClass('success');
                 $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Lets go!');
                 monster.set('step', 2);
@@ -91,7 +95,7 @@ $(document).ready(function() {
     pubnub.subscribe({
         channel: 'ongair_im',
         message: function(m){
-            console.log(m)
+            // console.log(m)
             handleMessage(m);
         }
     });
