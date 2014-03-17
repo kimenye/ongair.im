@@ -9512,7 +9512,7 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 }
 /* line 148, ../scss/app.scss */
 .demo .instructions p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-top: 1.3rem;
 }
@@ -9526,97 +9526,98 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 }
 /* line 165, ../scss/app.scss */
 .demo .navigation {
+  margin-left: 5em;
   padding-top: 3rem;
 }
-/* line 167, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 .demo .navigation a {
   margin: auto;
-  display: block;
+  width: 170px;
 }
-/* line 174, ../scss/app.scss */
+/* line 175, ../scss/app.scss */
 .demo .step {
   padding: 7rem;
   background: #ffffff;
 }
-/* line 178, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 .demo .step h4 {
   margin-bottom: 2rem;
 }
-/* line 182, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 .demo .step .btn {
   padding-top: 2rem;
 }
 
-/* line 235, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 .hidden {
   display: none;
 }
 
-/* line 239, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 .compose {
   background: #e7e7e7;
   border-radius: 5px;
   padding: 5px;
   position: relative;
 }
-/* line 245, ../scss/app.scss */
+/* line 246, ../scss/app.scss */
 .compose .send {
   margin-top: 5px;
   margin-bottom: 0px;
 }
-/* line 250, ../scss/app.scss */
+/* line 251, ../scss/app.scss */
 .compose small.sent {
   font-size: 80%;
   font-style: italic;
 }
-/* line 255, ../scss/app.scss */
+/* line 256, ../scss/app.scss */
 .compose textarea {
   border: none;
   margin-bottom: 0px;
 }
 
-/* line 261, ../scss/app.scss */
+/* line 262, ../scss/app.scss */
 .footer {
   background: #333333;
   padding: 1rem;
   width: 100%;
 }
-/* line 268, ../scss/app.scss */
+/* line 269, ../scss/app.scss */
 .footer h5.mantra {
   display: inline-block;
 }
-/* line 270, ../scss/app.scss */
+/* line 271, ../scss/app.scss */
 .footer h5.mantra small {
   font-size: 80%;
 }
-/* line 276, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 .footer .social {
   float: right;
   margin-bottom: 0px;
 }
-/* line 280, ../scss/app.scss */
+/* line 281, ../scss/app.scss */
 .footer .social li {
   list-style: none;
   display: block;
   float: left;
   margin-right: 10px;
 }
-/* line 286, ../scss/app.scss */
+/* line 287, ../scss/app.scss */
 .footer .social li a {
   display: block;
   height: 50px;
   width: 50px;
   background: url(../images/social.png) no-repeat center 0;
 }
-/* line 293, ../scss/app.scss */
+/* line 294, ../scss/app.scss */
 .footer .social li a:hover {
   opacity: 0.8;
 }
-/* line 297, ../scss/app.scss */
+/* line 298, ../scss/app.scss */
 .footer .social li a.twitter {
   background-position: center 0;
 }
-/* line 301, ../scss/app.scss */
+/* line 302, ../scss/app.scss */
 .footer .social li a.mail {
   background-position: center -400px;
 }

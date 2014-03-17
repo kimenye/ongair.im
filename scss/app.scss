@@ -146,7 +146,7 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 		}
 
 		p {
-			font-size: 1.6rem;
+			font-size: 1.2rem;
 			text-align: center;
 			margin-top: 1.3rem;
 
@@ -163,11 +163,12 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 	}
 
 	.navigation {
+		margin-left: 5em;
 		padding-top: 3rem;
 		a {
 			margin: auto;
-			// width: 70px;
-			display: block;
+			width: 170px;
+			// display: block;
 		}
 	}
 

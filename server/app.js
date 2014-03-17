@@ -22,22 +22,23 @@ app.use(express.session({secret: '1234567890QWERTY'}));
 
 app.get('/code', function(req, res){
 
+	console.log("Params", req.body); 
 	var currTime = new Date().getTime().toString();
-    var token = req.session.token;
+    // var token = req.session.token;
+    var newToken = req.param('reset');
 
-
-	if (req.session.token == null)
-	{
-		token =  currTime.substring(currTime.length-5);
-		req.session.token = token;
-	}
+	// if (req.session.token == null)
+	// {
+	token =  currTime.substring(currTime.length-5);
+		// req.session.token = token;
+	// }
 	
   	res.json({code: token});
 });
 
 app.post('/api', function(req, res) {
 
-	console.log("Request : ", req.body);
+	console.log("Request : ", req.query);
 	
 
 	pubnub.publish({

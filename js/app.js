@@ -19,45 +19,28 @@ $(document).ready(function() {
     }
 
     function handleMessage(message) {
-        // first check if we have verified the code
-        var verified = monster.get('token_verified') != null;
 
         if (!verified) {
-            // debugger;
-            var token = monster.get('token');
-            if (message.data.message == token) {
-                monster.set('token_verified', true);
-                monster.set('phone_number', message.data.from);
-                
+            if (message.data.message == token) {                
                 $('input[name="phone_number"]').val(message.data.from);
+                $('.instructions h1, .navigation a.go').addClass('success');
+                $('.navigation a.go').removeClass('disabled').html('Lets go!');
 
-                $('.instructions h1, .navigation a').addClass('success');
-                $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Click here!');
-                monster.set('step', 2);
+                verified = true;
             }
         }
     }
 
-    function init() {
-        var verified = monster.get('token_verified') != null;
-        var step = monster.get('step');
-        // debugger;
-        if (step == 2) {
-            $('.instructions h1, .navigation a').addClass('success');
-            $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Lets go!');
-            // $('step-one .navigation a').click();
-            // $('.orbit-next').click();
-            $('input[name="phone_number"]').val(monster.get('phone_number'));
-        }
-    }
+    function getToken(reset) {
+        $.getJSON("demo/code", function(data) {
+            token = data.code;
+            setToken(token);
+        });
+    }   
 
-    var token = monster.get('token');
+    var token = null, step = 0, verified = false;
     if (token == null) {
-    	$.getJSON("demo/code", function(data) {
-    		token = data.code;
-    		monster.set('token', token);    		
-    		setToken(token);
-    	});
+    	getToken(false);
     }
     else {
     	setToken(token);
@@ -80,12 +63,15 @@ $(document).ready(function() {
     });
 
     $('.navigation a').click(function() {
-        if (monster.get('step') == 2) {
+        if (verified)
             $('.orbit-next').click();
-        }
-    })
+    });
 
-    init();
+    $('.restart').click(function() {
+        token = null;
+        verified = false;
+        getToken(true);
+    });
 
     var pubnub = PUBNUB.init({
         publish_key: 'pub-c-d2bcacda-ad1e-4c33-aa0f-77e592c387da',
