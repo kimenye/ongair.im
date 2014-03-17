@@ -32,7 +32,7 @@ $(document).ready(function() {
                 $('input[name="phone_number"]').val(message.data.from);
 
                 $('.instructions h1, .navigation a').addClass('success');
-                $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Lets go!');
+                $('.navigation a').removeClass('disabled').html('Your code was received from +' + monster.get('phone_number') + '. Click here!');
                 monster.set('step', 2);
             }
         }
