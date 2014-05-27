@@ -128,7 +128,7 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
          p{color: #fff;}}
 	form{
 		label{ font-size: 3rem; color: #fff; margin: 100px 0 0 0;}
-		input[type="text"]{ padding: 25px; border-radius: 0; border-bottom-left-radius: 3px;
+		input[type="text"], input[type="email"]{ padding: 25px; border-radius: 0; border-bottom-left-radius: 3px;
         border-top-left-radius: 3px;}
 	}
      .postfix{ height: 52px; padding-top: 3px;}

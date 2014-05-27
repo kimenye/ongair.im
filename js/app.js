@@ -2,6 +2,22 @@ $(document).ready(function() {
 
     var pattern = /^((http|https|ftp):\/\/)/;
 
+    $('.subscribe.form').submit(function() {
+        url = window.location.toString();
+        if(!pattern.test(url)) {
+            $('.subscribe.form, .success').toggleClass('hidden');            
+        }
+        else {
+            $(this).ajaxSubmit({ success: function() {
+                console.log("Was a success");
+                $('.subscribe.form, .success').toggleClass('hidden'); 
+            });
+        }
+        return false;
+
+
+    });
+
     
     // $.fn.fullpage();
 

@@ -39,26 +39,23 @@
     </div>
     <!---->
     <!---->
-<div id="hero">
+      <div id="hero">
         <div class="row">
           <div class="large-6 large-centered columns">
-          <div class="success">
-          <h2>Thank you!</h2>
-          <p>You will be the first to know when we launch.</p></div>
-            <!--
-            <form>
+          <form method="POST" action="/service/subscribe" class="subscribe form">
               <label>Get informed of the launch</label>
               <div class="row collapse">
-        <div class="small-10 columns">
-          <input type="text" name="email" class="radius" placeholder="Email Address" required="required">
-        </div>
-        <div class="small-2 columns">
-          <input type="submit" value="Subscribe" class="button postfix radius">
-        </div>
-      </div>
+                <div class="small-10 columns">
+                  <input type="email" name="email" class="radius" placeholder="Email Address" required="required">
+                </div>
+                <div class="small-2 columns">
+                  <input type="submit" value="Subscribe" class="button postfix radius">
+                </div>
+              </div>
           </form>
-          -->
-            
+          <div class="success hidden">
+            <h2>Thank you!</h2>
+            <p>You will be the first to know when we launch.</p></div>
           </div>
         </div>
       </div>
@@ -68,8 +65,10 @@
       <div class="large-10 large-centered columns">
         <h2>Harness the power of Whatsapp for Business</h2>
         
-        <p>Whatsapp is the largest Social network, twice as much stuff is shared on the platform than<br/>
+        <!-- <p>Whatsapp is the largest Social network, twice as much stuff is shared on the platform than<br/>
          both Twitter and Facebook combined. Innovative business are already using it</p>
+ -->
+        <p>WhatsApp has over 500M monthly active users. Is your business part of the Conversation? <br />Innovative business are already using it to reach their customers.</p>
         </div>
       </div>
     </div>
