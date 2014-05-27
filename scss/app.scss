@@ -98,6 +98,7 @@ div#home {
         &:hover{@include transition(.5s); color:#cecece};
 		}
 	}
+	.logo{ margin: 4px 0 0 0;}
 	.login{
        background: #e7e9ec; color:#231f20; padding: 0.5rem 1rem; margin: 14px 10px 0 0; border: 1px solid #e7e9ec;
        &:hover{@include transition(.5s); background: #fff; border: 1px solid #e7e9ec};
@@ -322,7 +323,7 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 .footer {
 	background: #333333;
 	padding: 1rem;
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 	width: 100%; 
 

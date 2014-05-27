@@ -9587,6 +9587,10 @@ div#home .tableCell {
   color: #cecece;
 }
 /* line 101, ../scss/app.scss */
+#menu .logo {
+  margin: 4px 0 0 0;
+}
+/* line 102, ../scss/app.scss */
 #menu .login {
   background: #e7e9ec;
   color: #231f20;
@@ -9594,7 +9598,7 @@ div#home .tableCell {
   margin: 14px 10px 0 0;
   border: 1px solid #e7e9ec;
 }
-/* line 103, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 #menu .login:hover {
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -9604,13 +9608,13 @@ div#home .tableCell {
   background: #fff;
   border: 1px solid #e7e9ec;
 }
-/* line 105, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 #menu .trial {
   background: #1a9fda;
   padding: 0.5rem 1rem;
   margin: 14px 0 0 0;
 }
-/* line 107, ../scss/app.scss */
+/* line 108, ../scss/app.scss */
 #menu .trial:hover {
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -9621,57 +9625,57 @@ div#home .tableCell {
 }
 
 /**/
-/* line 113, ../scss/app.scss */
+/* line 114, ../scss/app.scss */
 body, h1, h2, h3, h4, h5, h6, button, .button {
   font-family: "PT Sans", sans-serif;
 }
 
-/* line 116, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 #topStrip {
   background: url("../images/stripe.jpg") top left repeat-x;
   height: 11px;
 }
 
 /****/
-/* line 121, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 #hero {
   background: url("../images/hero.png");
   height: 450px;
   background-size: cover;
 }
-/* line 125, ../scss/app.scss */
+/* line 126, ../scss/app.scss */
 #hero .success {
   text-align: center;
 }
-/* line 126, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 #hero .success h2 {
   font-size: 4rem;
   color: #fff;
   margin: 100px 0 0 0;
 }
-/* line 127, ../scss/app.scss */
+/* line 128, ../scss/app.scss */
 #hero .success p {
   color: #fff;
 }
-/* line 129, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 #hero form label {
   font-size: 3rem;
   color: #fff;
   margin: 100px 0 0 0;
 }
-/* line 130, ../scss/app.scss */
+/* line 131, ../scss/app.scss */
 #hero form input[type="text"] {
   padding: 25px;
   border-radius: 0;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
-/* line 133, ../scss/app.scss */
+/* line 134, ../scss/app.scss */
 #hero .postfix {
   height: 52px;
   padding-top: 3px;
 }
-/* line 134, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 #hero img {
   display: block;
   margin: auto;
@@ -9679,18 +9683,18 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 }
 
 /****/
-/* line 145, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 #intro {
   padding: 3rem 0;
 }
-/* line 146, ../scss/app.scss */
+/* line 147, ../scss/app.scss */
 #intro h2 {
   font-size: 3rem;
   text-align: center;
   font-weight: 800;
   color: #4fb7e3;
 }
-/* line 147, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 #intro p {
   font-size: 1.25rem;
   font-weight: 400;
@@ -9698,21 +9702,21 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 }
 
 /****/
-/* line 150, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .main-links {
   border-top: 3px solid #ededed;
   border-bottom: 3px solid #ededed;
   padding: .3rem;
   width: 100%;
 }
-/* line 158, ../scss/app.scss */
+/* line 159, ../scss/app.scss */
 .main-links button, .main-links .button {
   margin: 0px;
   text-transform: uppercase;
   display: block;
   margin: auto;
 }
-/* line 165, ../scss/app.scss */
+/* line 166, ../scss/app.scss */
 .main-links .inline-list {
   padding: 0.95rem;
   margin-left: -1.375rem;
@@ -9721,30 +9725,30 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
   margin-bottom: 0px;
 }
 
-/* line 174, ../scss/app.scss */
+/* line 175, ../scss/app.scss */
 .promo {
   background: #f4f4f4;
 }
 
-/* line 178, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 .customers {
   padding: 2rem;
 }
 
-/* line 183, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 .demo {
   padding: 2rem;
   background: #f5f5f5;
 }
-/* line 187, ../scss/app.scss */
+/* line 188, ../scss/app.scss */
 .demo .centered {
   text-align: center;
 }
-/* line 191, ../scss/app.scss */
+/* line 192, ../scss/app.scss */
 .demo .instructions {
   padding-top: 3rem;
 }
-/* line 195, ../scss/app.scss */
+/* line 196, ../scss/app.scss */
 .demo .instructions h1 {
   text-align: center;
   border-radius: 50%;
@@ -9752,121 +9756,121 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
   width: 60px;
   margin: auto;
 }
-/* line 203, ../scss/app.scss */
+/* line 204, ../scss/app.scss */
 .demo .instructions h1.success {
   color: #ffffff;
   background: #43ac6a;
 }
-/* line 208, ../scss/app.scss */
+/* line 209, ../scss/app.scss */
 .demo .instructions p {
   font-size: 1.2rem;
   text-align: center;
   margin-top: 1.3rem;
 }
-/* line 213, ../scss/app.scss */
+/* line 214, ../scss/app.scss */
 .demo .instructions p span.highlight {
   color: #0e8dd9;
 }
-/* line 220, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 .demo .orbit-container .orbit-next, .demo .orbit-container .orbit-prev, .demo .orbit-container .orbit-slide-number, .demo .orbit-container .orbit-timer {
   display: none;
 }
-/* line 225, ../scss/app.scss */
+/* line 226, ../scss/app.scss */
 .demo .navigation {
   margin-left: 5em;
   padding-top: 3rem;
 }
-/* line 228, ../scss/app.scss */
+/* line 229, ../scss/app.scss */
 .demo .navigation a {
   margin: auto;
   width: 170px;
 }
-/* line 235, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 .demo .step {
   padding: 7rem;
   background: #ffffff;
 }
-/* line 239, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 .demo .step h4 {
   margin-bottom: 2rem;
 }
-/* line 243, ../scss/app.scss */
+/* line 244, ../scss/app.scss */
 .demo .step .btn {
   padding-top: 2rem;
 }
 
-/* line 296, ../scss/app.scss */
+/* line 297, ../scss/app.scss */
 .hidden {
   display: none;
 }
 
-/* line 300, ../scss/app.scss */
+/* line 301, ../scss/app.scss */
 .compose {
   background: #e7e7e7;
   border-radius: 5px;
   padding: 5px;
   position: relative;
 }
-/* line 306, ../scss/app.scss */
+/* line 307, ../scss/app.scss */
 .compose .send {
   margin-top: 5px;
   margin-bottom: 0px;
 }
-/* line 311, ../scss/app.scss */
+/* line 312, ../scss/app.scss */
 .compose small.sent {
   font-size: 80%;
   font-style: italic;
 }
-/* line 316, ../scss/app.scss */
+/* line 317, ../scss/app.scss */
 .compose textarea {
   border: none;
   margin-bottom: 0px;
 }
 
-/* line 322, ../scss/app.scss */
+/* line 323, ../scss/app.scss */
 .footer {
   background: #333333;
   padding: 1rem;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%;
 }
-/* line 329, ../scss/app.scss */
+/* line 330, ../scss/app.scss */
 .footer h5.mantra {
   display: inline-block;
 }
-/* line 331, ../scss/app.scss */
+/* line 332, ../scss/app.scss */
 .footer h5.mantra small {
   font-size: 80%;
 }
-/* line 337, ../scss/app.scss */
+/* line 338, ../scss/app.scss */
 .footer .social {
   float: right;
   margin-bottom: 0px;
 }
-/* line 341, ../scss/app.scss */
+/* line 342, ../scss/app.scss */
 .footer .social li {
   list-style: none;
   display: block;
   float: left;
   margin-right: 10px;
 }
-/* line 347, ../scss/app.scss */
+/* line 348, ../scss/app.scss */
 .footer .social li a {
   display: block;
   height: 50px;
   width: 50px;
   background: url(../images/social.png) no-repeat center 0;
 }
-/* line 354, ../scss/app.scss */
+/* line 355, ../scss/app.scss */
 .footer .social li a:hover {
   opacity: 0.8;
 }
-/* line 358, ../scss/app.scss */
+/* line 359, ../scss/app.scss */
 .footer .social li a.twitter {
   background-position: center 0;
 }
-/* line 362, ../scss/app.scss */
+/* line 363, ../scss/app.scss */
 .footer .social li a.mail {
   background-position: center -400px;
 }
