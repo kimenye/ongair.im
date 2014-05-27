@@ -36,6 +36,18 @@ app.get('/code', function(req, res){
   	res.json({code: token});
 });
 
+app.post('/subscribe', function(req, res) {
+
+
+	request.post("http://forms.brace.io/trevor@sprout.co.ke", { form: { email: req.param('email') }, headers: { 'referer': "http://ongair.im" }  }, function(err, rsp, body) {
+	});
+	
+
+
+	res.json({ success: true });
+
+});
+
 app.post('/api', function(req, res) {
 
 	console.log("Request : ", req.query);
@@ -66,6 +78,6 @@ app.post('/send', function(req, res) {
 });
 
 
-var server = app.listen(3000, function() {
+var server = app.listen(3001, function() {
     console.log('Listening on port %d', server.address().port);
 });
