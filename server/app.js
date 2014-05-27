@@ -20,6 +20,10 @@ app.use(express.bodyParser());
 app.use(express.cookieParser());
 app.use(express.session({secret: '1234567890QWERTY'}));
 
+app.get('/service', function(req, res) {
+	res.json({success: true});
+});
+
 app.get('/code', function(req, res){
 
 	console.log("Params", req.body); 
@@ -36,7 +40,7 @@ app.get('/code', function(req, res){
   	res.json({code: token});
 });
 
-app.post('/subscribe', function(req, res) {
+app.post('/service/subscribe/', function(req, res) {
 
 
 	request.post("http://forms.brace.io/trevor@sprout.co.ke", { form: { email: req.param('email') }, headers: { 'referer': "http://ongair.im" }  }, function(err, rsp, body) {
