@@ -9439,7 +9439,6 @@ div#home .tableCell {
 }
 /* line 94, ../scss/app.scss */
 #menu ul span {
-  float: left;
   margin: 1.25rem 10px;
   color: #231f20;
 }
