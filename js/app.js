@@ -11,7 +11,8 @@ $(document).ready(function() {
             $(this).ajaxSubmit({ success: function() {
                 console.log("Was a success");
                 $('.subscribe.form, .success').toggleClass('hidden'); 
-            });
+            }}
+            );
         }
         return false;
 
