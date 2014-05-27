@@ -38,7 +38,33 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
-
+/*************** MIXINS ***********************/
+@mixin transition($duration) {
+	-webkit-transition: $duration ease;
+	-moz-transition: $duration ease;
+	-ms-transition: $duration ease;
+	-o-transition: $duration ease;
+	transition: $duration ease;
+}
+@mixin transform($deg){
+	transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+}
+@mixin breakpoint($point) {
+  @if $point == momo {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == tab {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $point == mulika {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+.row{ max-width: 80rem;}
 .nav-bg {
 	background: #000000;
 }
@@ -61,32 +87,66 @@ div#home {
 		vertical-align: top;
 	}
 }
+/****/
+#menu{
+	
+	ul{  margin:0; padding:0;
+		span{ float: left; margin: 1.25rem 10px; color: #231f20;
+		}
+		li{ float: left; list-style: none; margin: 1.25rem 0 0 0;}
+		a{ color: #231f20; text-transform: uppercase; font-size: 0.75rem; padding: 1.5rem 0;
+        &:hover{@include transition(.5s); color:#cecece};
+		}
+	}
+	.login{
+       background: #e7e9ec; color:#231f20; padding: 0.5rem 1rem; margin: 14px 10px 0 0; border: 1px solid #e7e9ec;
+       &:hover{@include transition(.5s); background: #fff; border: 1px solid #e7e9ec};
+	}
+	.trial{
+      background: #1a9fda; padding: 0.5rem 1rem; margin: 14px 0 0 0; 
+      &:hover{@include transition(.5s); background:#0b71ae;}
+	}
+	}
 
+
+/**/
 body, h1, h2, h3, h4, h5, h6, button, .button {
 	font-family: 'PT Sans', sans-serif
 }
-
-.hero {
+#topStrip{
 	background: url("../images/stripe.jpg") top left repeat-x;
-	padding-top: 8rem;
-	padding-bottom: 5rem;
-	// border-bottom: 3px solid #ededed;
-
+	height: 11px;
+}
+/****/
+#hero {
+	background: url('../images/hero.png');
+    height: 450px;
+    background-size: cover;
+    .success{ text-align: center;
+    	h2{font-size: 4rem; color: #fff; margin: 100px 0 0 0; }
+         p{color: #fff;}}
+	form{
+		label{ font-size: 3rem; color: #fff; margin: 100px 0 0 0;}
+		input[type="text"]{ padding: 25px; border-radius: 0; border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;}
+	}
+     .postfix{ height: 52px; padding-top: 3px;}
 	img {
 		display: block;
 		margin: auto;
+		width: 100%;
 	}
 
-	img.inline {
-		display: inline-block;
-	}
+	
 
-	.tagline {
-		text-align: center;
-		margin-top: 2rem;
-	}
+	
 }
-
+/****/
+#intro{ padding: 3rem 0;
+	h2{ font-size: 3rem; text-align: center; font-weight: 800; color: #4fb7e3;}
+	p{ font-size: 1.25rem; font-weight: 400; text-align: center;}
+}
+/****/
 .main-links {
 	border-top: 3px solid #ededed;
 	border-bottom: 3px solid #ededed;
