@@ -154,14 +154,27 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 /****/
 #intro{ padding: 3rem 0;	
 	p{ font-size: 1.25rem; font-weight: 400; text-align: center;}
+	.clients{
+		li{ float: left; position: relative; height: 120px; width: 150px; overflow: hidden; list-style: none; margin: 0 8rem 0 0; 
+			&:last-child{margin: 0 !important; }
+            &:hover{@include transition(1s); background-position:15px -120px !important; }; 
+		}
+		img{vertical-align: bottom;}
+	}
+}
+/****/
+#features{
+	background: #efefed; padding: 2rem 0;
+	h2{font-size: 3rem;}
+	.orbit-slide-number{ display: none;}
 }
 /****/
 .main-links {
 	border-top: 3px solid #ededed;
 	border-bottom: 3px solid #ededed;
 	padding: .3rem;
-	// position: absolute;
-	// bottom: 0px;
+	 position: absolute;
+	 bottom: 0px;
 	width: 100%;
 
 	button, .button {
