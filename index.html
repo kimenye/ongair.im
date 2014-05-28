@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <!-- <link rel="stylesheet" href="stylesheets/fullPage.css" /> -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/modernizr.js"></script>
   </head>
   <body>
@@ -20,23 +21,23 @@
 <!---->
     <div id="menu">
     <div class="row">
-     <div class="large-5 columns">
+     <div class="small-12 large-5 columns">
       <ul>
         <li><a href="">What's ongair </a></li>
         <li><span>\</span></li>
         <li><a href="">Features </a></li>
         <li><span>\</span></li>
-        <li><a href="">Examples </a></li>
+        <li><a href="#examples">Examples </a></li>
         <li><span>\</span></li>
         <li><a href="">Faqs </a></li>
         <li><span>\</span></li>
         <li><a href="/blog">Blog</a></li>
       </ul>
     </div>
-     <div class="large-2 logo columns">
+     <div class="small-12 large-2 logo columns">
        <a href="#"><img src="images/logo.png" alt="Ongair"></a>
      </div>
-     <div class="large-2 right columns">
+     <div class="large-2 hide-for-small right columns">
        <a href="" class="button login radius">Login</a>
        <a href="" class="button trial radius">Free Trial</a>
      </div>
@@ -49,12 +50,12 @@
         <div class="row">
           <div class="large-6 large-centered columns">
           <form method="POST" action="service/subscribe/" class="subscribe form">
-              <label>Get informed of the launch</label>
+              <label>Join our Beta Today!</label>
               <div class="row collapse">
-                <div class="small-10 columns">
+                <div class="small-9 large-10 columns">
                   <input type="email" name="email" class="radius" placeholder="Email Address" required="required">
                 </div>
-                <div class="small-2 columns">
+                <div class="small-3 large-2 columns">
                   <input type="submit" value="Subscribe" class="button postfix radius">
                 </div>
               </div>
@@ -75,16 +76,66 @@
          both Twitter and Facebook combined. Innovative business are already using it</p>
  -->
         <p>WhatsApp has over 500M monthly active users. Is your business part of the Conversation? <br />Innovative business are already using it to reach their customers.</p>
+
+          <!-- <p>Ongair lets you reach</p> -->
         </div>
       </div>
     </div>
     <!---->
+
+    <section class="examples" id="examples">
+      <div class="selection">
+        <div class="row">
+          <div class="large-12 large-centered columns">
+            <h2>Some Great Examples to get you started</h2>
+          </div>        
+        </div>
+
+        <div class="row sample thumbnails">
+          <div class="large-4 columns active">
+            <div class="story">
+              <img src="http://placehold.it/350x150&text=%20" class="th">
+              <a href=""><i class="fa fa-play-circle"></i></a>
+            </div>
+
+            <div class="about">
+              <h3>Customer Service</h3>
+            </div>
+          </div>
+          <div class="large-4 columns">
+            <div class="story">
+              <img src="http://placehold.it/350x150&text=%20" class="th">
+              <i class="fa fa-play-circle"></i>
+            </div>
+
+            <div class="about">
+              <h3>Marketing</h3>
+            </div>
+          </div>       
+          <div class="large-4 columns">
+            <div class="story">
+              <img src="http://placehold.it/350x150&text=%20" class="th">
+              <i class="fa fa-play-circle"></i>
+            </div>
+
+            <div class="about">
+              <h3>API</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+
+      </div>
+    </section>
+
+
     <div id="customer" class="section">
      
       <div class="footer">
         <div class="row">
 
-          <div class="medium-8 columns">
+          <div class="medium-8 small-6 columns">
 
             <a href="http://sprout.co.ke">
               <img src="images/sprout.png" alt="Sprout" />      
@@ -93,7 +144,7 @@
               <small>Make Useful Stuff from the Internet</small>
             </h5>
           </div>
-          <div class="medium-4 columns">
+          <div class="medium-4 small-6 columns">
             <ul class="social">
               <li>
                 <a href="http://www.twitter.com/ongair_" class="twitter"></a>
