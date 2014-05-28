@@ -113,7 +113,7 @@ div#home {
        &:hover{@include transition(.5s); background: #fff; border: 1px solid #e7e9ec};
 	}
 	.trial{
-      background: #1a9fda; padding: 0.5rem 1rem; margin: 14px 0 0 0; 
+      background: #1a9fda; padding: 0.5rem 1rem; margin: 14px 0 0 0; float: right;
       &:hover{@include transition(.5s); background:#0b71ae;}
 	}
 	}
