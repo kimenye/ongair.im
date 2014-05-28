@@ -80,6 +80,7 @@
 	}
 }
 
+h2{ font-size: 3rem; text-align: center; font-weight: 800; color: #4fb7e3;}
 
 div#home {
 	// background: url('../images/bg.png');
@@ -98,6 +99,14 @@ div#home {
         &:hover{@include transition(.5s); color:#cecece};
 		}
 	}
+
+	.logo {
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+
 	.logo{ margin: 4px 0 0 0;}
 	.login{
        background: #e7e9ec; color:#231f20; padding: 0.5rem 1rem; margin: 14px 10px 0 0; border: 1px solid #e7e9ec;
@@ -116,7 +125,7 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 }
 #topStrip{
 	background: url("../images/stripe.jpg") top left repeat-x;
-	height: 11px;
+	height: 11px;	
 }
 /****/
 #hero {
@@ -143,8 +152,7 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 	
 }
 /****/
-#intro{ padding: 3rem 0;
-	h2{ font-size: 3rem; text-align: center; font-weight: 800; color: #4fb7e3;}
+#intro{ padding: 3rem 0;	
 	p{ font-size: 1.25rem; font-weight: 400; text-align: center;}
 }
 /****/
@@ -169,6 +177,50 @@ body, h1, h2, h3, h4, h5, h6, button, .button {
 		margin-right: 0px;
 		margin-top: 0px;
 		margin-bottom: 0px;
+	}
+}
+
+.examples {
+
+	.selection {
+		padding: 2rem;
+		background: #EFEFED;	
+	}
+	
+
+	h2 {
+		color: #848588;
+		// text-align: center;
+		font-weight: 400;
+	}
+
+	h3 {
+		color: #5C5C60;
+		text-align: center;
+	}
+
+	.row.sample.thumbnails {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+		
+		.story {
+			position: relative;
+
+			img.th {
+				display: block;
+				margin: auto;
+			}
+
+			i.fa {
+				color: #2C2A29;
+				font-size: 4rem;
+				left: 50%;
+				top: 50%;
+				margin-left: -2rem;
+				margin-top: -2rem;
+				position: absolute;
+			}
+		}
 	}
 }
 
