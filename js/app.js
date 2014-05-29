@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 
     });
-
+$(document).foundation({});
     
     // $.fn.fullpage();
 
